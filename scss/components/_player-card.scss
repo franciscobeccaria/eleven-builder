@@ -1,0 +1,96 @@
+.player-card {
+  height: 19.0666rem;
+  width: 14.9333rem;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin: 1.333rem;
+  position: relative;
+}
+
+.player-section {
+  height: 15.6rem;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
+}
+
+.player-name {
+  height: 3.4666rem;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-name p {
+  color: honeydew;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.player-name p span {
+  font-weight: 800;
+}
+
+.player-border {
+  position: absolute;
+  border: 1px solid black;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.player-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.options-section {
+  position: absolute;
+}
+
+.delete-btn {
+  visibility: hidden;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  top: -0.2rem;
+  left: -2.8rem;
+  background: red;
+  cursor: pointer;
+}
+
+.edit-btn {
+  visibility: hidden;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  top: 2.8rem;
+  left: -2.8rem;
+  background: orange;
+  cursor: pointer;
+}
+
+.delete-btn,
+.edit-btn {
+  -webkit-user-select: none; /* for button */
+  -webkit-appearance: button; /* for input */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.player-card:hover {
+  .edit-btn,
+  .delete-btn {
+    visibility: visible;
+    transition-delay: 0s;
+  }
+}

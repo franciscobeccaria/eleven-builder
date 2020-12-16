@@ -1,0 +1,17 @@
+@import 'config/mixins';
+@import 'config/variables';
+
+@import 'base/base';
+
+@import 'components/button';
+@import 'components/input';
+@import 'components/player-card';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'layout/main/main';
+@import 'layout/main/control-section/control-section';
+@import 'layout/main/team-section/team-section';
+@import 'layout/main/team-section/field';
+@import 'layout/main/modal';

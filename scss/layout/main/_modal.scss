@@ -1,0 +1,22 @@
+.modal {
+  position: absolute;
+  background: rgb(39, 38, 37);
+  height: 50rem;
+  width: 50rem;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+// test
+
+.non-z-index {
+  z-index: 4;
+}
+
+.white {
+  color: honeydew;
+}

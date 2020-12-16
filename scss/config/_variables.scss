@@ -1,0 +1,56 @@
+// Paleta de colores:
+:root {
+  --color-first: #007bdf;
+  --color-border: #dfe0e0;
+  --color-alert: #ff3c32;
+}
+
+$border-color: #ccc;
+$text-color: #53575a;
+$dark-color: #141618;
+// Header colors
+$header-color: #0b192c;
+$header-text-color: #f9f4f4;
+$header-text-hover-color: #00bcd4;
+// Section-title colors
+$page-title-color: #007bdf;
+$section-title-color: #00bcd4;
+$button-color: #f7fc00;
+$button-hover-color: #f9f4f4;
+$button-border-color: black;
+$on-loan-color: #f9f4f4;
+// Section-players colors
+$section-players-color: #042240;
+// Player-card colors
+$player-card-color: #f9f4f4;
+$player-card-name-color: black;
+$player-card-name-hover-color: #252727;
+$player-card-info-inside-color: black;
+$player-card-info-inside-border: black;
+
+// Variables de apilamiento (z-index)
+:root {
+  --z-doubleback: -20;
+  --z-back: -10;
+  --z-middleback: -5;
+  --z-normal: 1;
+  --z-positivenormal: 5;
+  --z-tooltip: 10;
+  --z-doubletooltip: 20;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+// Fuentes
+$roboto-family: 'Roboto', Arial, Helvetica, sans-serif;
+$pridi-family: 'Pridi', Arial, Helvetica, sans-serif;
+$source-sans-pro-family: 'Source Sans Pro', sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  400: 400px,
+  500: 500px,
+  700: 700px,
+  900: 900px,
+  1024: 1024px,
+);

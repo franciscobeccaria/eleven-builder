@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleven Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="body">
+    <header></header>
+    <main id="main">
+        <div class="control-section">
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <p>Press the "Add player" button and a player will be added to the subs section.</p>
+                <p>Each player can be edited, deleted and moved. Each player is created with a first name, last name, player image URL, which can be jpg or png and the club and nation images, which preferably should be png.</p>
+                <div class="container-example">
+                    <h4>Player example:</h4>
+                    <div class="container-example-player">
+                        <div class="player-card">
+                            <div class="player-section">
+                                <div class="player-border"></div>
+                                <img class="player-image" src="https://s.libertaddigital.com/2020/08/14/1920/1080/fit/messi.jpg" alt="Example image">
+                            </div>
+                            <div class="player-name">
+                                <p>LIONEL <span>MESSI</span></p>
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-section">
+                                <div class="player-border"></div>
+                                <img class="player-image" src="https://futhead.cursecdn.com/static/img/21/players/158023.png" alt="Example image">
+                            </div>
+                            <div class="player-name">
+                                <p>LIONEL <span>MESSI</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-player container" id="add-player-container">
+                <h3 class="text-center">Add a player:</h3>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="" id="firstname">
+                    <label>First Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="" id="lastname">
+                    <label>Last Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="" id="player-image">
+                    <label>URL Player image</label>
+                    <span class="focus-border"></span>
+                </div>
+                <!-- <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="">
+                    <label>URL Club image</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="">
+                    <label>URL Nation image</label>
+                    <span class="focus-border"></span>
+                </div> -->
+                <button class="btn first" id="btn-add-player">Add player</button>
+            </div>
+        </div>
+        <div class="team-section">
+            <div class="eleven-section">
+                <div class="eleven-title">
+                    <h1 class="text-center pointer" id="title">Title</h1>
+                </div>
+                <div class="eleven-field" id="field">
+                    <div class="football-pitch">
+                        <div class="outline marking"></div>
+                        <div class="box left marking"></div>
+                        <div class="box-d left marking"></div>
+                        <div class="box left small marking"></div>
+                        <div class="box right marking"></div>
+                        <div class="box-d right marking"></div>
+                        <div class="box right small marking"></div>
+                        <div class="spot left marking"></div>
+                        <div class="spot right marking"></div>
+                        <div class="spot center marking"></div>
+                        <div class="center-line marking"></div>
+                        <div class="center-circle marking"></div>
+                        <div class="corner top left marking"></div>
+                        <div class="corner top right marking"></div>
+                        <div class="corner bottom left marking"></div>
+                        <div class="corner bottom right marking"></div>
+                        <div class="grass"></div>
+                      </div>
+                    <div class="subs-title">
+                        <h3 class="text-center">Subs:</h3>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="add-player container" id="add-player-container">
+                <h3 class="text-center white">Edit player:</h3>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="" id="modal-firstname">
+                    <label >First Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="" id="modal-lastname">
+                    <label>Last Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-16" type="text" placeholder="" id="modal-player-image">
+                    <label>URL Player image</label>
+                    <span class="focus-border"></span>
+                </div>
+                <button class="btn first" id="btn-edit-player">Edit player</button>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/draggableElement.js"></script>
+    <script src="scripts/input.js"></script>
+    <script src="scripts/addPlayer.js"></script>
+
+</body>
+</html>

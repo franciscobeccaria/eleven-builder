@@ -1,0 +1,61 @@
+.team-section {
+  height: 107.5rem;
+  width: 137.5rem;
+  display: flex;
+  margin-left: 2rem;
+}
+
+.eleven-section {
+  height: 107.5rem;
+  width: 100%;
+}
+
+.eleven-title {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eleven-field {
+  position: relative;
+  height: 100rem;
+}
+
+.sub {
+  height: 20rem;
+  width: 15rem;
+  margin: 1.33rem;
+  font-size: 3rem;
+}
+
+.subs-title {
+  width: 56.25rem;
+  height: 6.5rem;
+  position: absolute;
+  left: 81.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-one {
+  position: absolute;
+  bottom: 1rem;
+  left: 33rem;
+  background: red;
+  height: 20rem;
+  width: 15rem;
+}
+
+.new-player {
+  position: absolute;
+  bottom: 20rem;
+  left: 30rem;
+}
+
+//test
+
+.pointer {
+  cursor: pointer;
+}
